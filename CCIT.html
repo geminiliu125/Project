@@ -58,9 +58,8 @@
 
         /* Glassmorphism */
         .glass-nav {
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            background: #f9fafb;
+            border-bottom: 1px solid #e5e7eb;
         }
 
         .glass-card {
@@ -95,6 +94,11 @@
         #mobile-menu.hidden-menu {
             transform: translateY(-100%);
         }
+
+        .logo {
+            filter: brightness(1.1);
+        }        
+
     </style>
 </head>
 <body class="bg-mesh">
@@ -105,16 +109,14 @@
     <!-- Navigation -->
     <nav class="fixed w-full top-0 z-50 glass-nav transition-all duration-500" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3 cursor-pointer group">
-                <div class="w-10 h-10 md:w-12 md:h-12 bg-brand-600 rounded-2xl flex items-center justify-center text-white shadow-xl group-hover:rotate-12 transition-transform duration-500">
-                    <iconify-icon icon="solar:minimalistic-magnifer-bold-duotone" width="28"></iconify-icon>
-                </div>
+            <div class="flex items-center gap-3 cursor-pointer group">               
+                <img src="image/0.png" width="50" class="logo">
                 <div>
                     <span class="block font-black text-lg md:text-xl tracking-tighter text-slate-800">國防大學理工學院</span>
                     <span class="block text-[8px] md:text-[10px] font-bold text-brand-600 tracking-[0.2em] uppercase">CHUNG CHENG INSTITUTE OF TECHNOLOGY</span>
                 </div>
             </div>
-            
+
             <!-- Desktop Links -->
             <div class="hidden lg:flex items-center space-x-10 font-bold text-slate-600">
                 <a href="#hero-section" class="hover:text-brand-600 transition-colors relative group">
@@ -158,7 +160,7 @@
     <section id="hero-section" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-gradient-to-b from-white/0 via-white/40 to-slate-50 z-10"></div>
-            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=2000&q=80" class="w-full h-full object-cover opacity-30" alt="Campus">
+            <img src="image/1.png" class="w-full h-full object-cover opacity-30" alt="Campus">
         </div>
 
         <!-- Animated Background Blobs -->
@@ -171,16 +173,16 @@
                     <span class="flex h-2 w-2 rounded-full bg-brand-500 animate-ping"></span>
                     <span class="text-[10px] md:text-xs font-black tracking-widest text-slate-500 uppercase">Excellent Academics 2026</span>
                 </div>
-                
+
                 <h1 class="text-5xl md:text-8xl font-black text-slate-900 leading-[1.1] md:leading-[1] mb-8 gsap-reveal">
                     在<span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-cyan-500">風嶺</span><br>
                     預見未來的自己
                 </h1>
-                
+
                 <p class="text-lg md:text-2xl text-slate-600 mb-12 max-w-2xl font-medium leading-relaxed gsap-reveal">
-                    我們融合頂尖科技與人文底蘊，以公費待遇支持優秀學子。在這裡，你將在濃郁書香中淬煉領導力，成為引領未來的卓越人才。
+                    每一次學習都是成長的累積，每一次挑戰都是蛻變的契機。從專業知識到領導能力，從自我要求到團隊合作，逐步勾勒出理想中的自己，迎向更寬廣的未來。
                 </p>
-                
+
                 <div class="flex flex-wrap gap-5 gsap-reveal">
                     <a href="#gallery" class="group bg-brand-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-brand-500/40 flex items-center gap-3 hover:bg-brand-700 transition-all hover:-translate-y-1">
                         校園剪影
@@ -205,7 +207,7 @@
                 </div>
                 <div class="max-w-sm border-l-4 border-brand-600 pl-8 gsap-reveal">
                     <p class="text-slate-500 font-medium text-lg leading-relaxed">
-                        我們不只是傳授知識，更在乎靈魂的廣度。透過經濟支持與人文浸潤，讓你在科技浪潮中，保有最純粹的書香與遠見。
+                        在學習與磨練中累積實力，在挑戰與成長中拓展視野。每一步堅持與努力，都是邁向卓越的起點。
                     </p>
                 </div>
             </div>
@@ -214,7 +216,7 @@
                 <!-- Card 1 -->
                 <div class="value-card-v2 group gsap-reveal" data-tilt>
                     <div class="relative h-[450px] md:h-[500px] rounded-[3rem] overflow-hidden bg-slate-900 shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover opacity-60 img-pan" alt="Support">
+                        <img src="image/2.png" class="absolute inset-0 w-full h-full object-cover opacity-60 img-pan" alt="Support">
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-950 via-brand-900/20 to-transparent"></div>
                         <div class="absolute inset-0 p-10 md:p-12 flex flex-col justify-end">
                             <div class="w-14 md:w-16 h-14 md:h-16 bg-white/20 backdrop-blur-xl rounded-2xl flex items-center justify-center text-white mb-6 md:mb-8 border border-white/30 group-hover:bg-brand-500 group-hover:scale-110 transition-all duration-500">
@@ -235,7 +237,7 @@
                 <!-- Card 2 -->
                 <div class="value-card-v2 group gsap-reveal mt-0 md:mt-12" data-tilt>
                     <div class="relative h-[450px] md:h-[500px] rounded-[3rem] overflow-hidden bg-slate-900 shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover opacity-60 img-pan" alt="Humanities">
+                        <img src="image/3.png" class="absolute inset-0 w-full h-full object-cover opacity-60 img-pan" alt="Humanities">
                         <div class="absolute inset-0 bg-gradient-to-t from-amber-950 via-amber-900/20 to-transparent"></div>
                         <div class="absolute inset-0 p-10 md:p-12 flex flex-col justify-end">
                             <div class="w-14 md:w-16 h-14 md:h-16 bg-white/20 backdrop-blur-xl rounded-2xl flex items-center justify-center text-white mb-6 md:mb-8 border border-white/30 group-hover:bg-amber-500 group-hover:scale-110 transition-all duration-500">
@@ -243,7 +245,7 @@
                             </div>
                             <h4 class="text-2xl md:text-3xl font-black text-white mb-4">書香氣息</h4>
                             <p class="text-slate-200 text-sm md:text-base leading-relaxed opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-500">
-                                在頂尖圖書館與充滿禪意的校園角落，我們營造深厚的人文底蘊。
+                                在充滿禪意的校園角落，我們營造深厚的人文底蘊。
                             </p>
                             <div class="mt-6 md:mt-8 flex items-center gap-2 text-amber-300 font-black text-sm tracking-widest uppercase">
                                 <span>Explore Space</span>
@@ -256,7 +258,7 @@
                 <!-- Card 3 -->
                 <div class="value-card-v2 group gsap-reveal mt-0 md:mt-24" data-tilt>
                     <div class="relative h-[450px] md:h-[500px] rounded-[3rem] overflow-hidden bg-slate-900 shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover opacity-60 img-pan" alt="Leadership">
+                        <img src="image/4.png" class="absolute inset-0 w-full h-full object-cover opacity-60 img-pan" alt="Leadership">
                         <div class="absolute inset-0 bg-gradient-to-t from-cyan-950 via-cyan-900/20 to-transparent"></div>
                         <div class="absolute inset-0 p-10 md:p-12 flex flex-col justify-end">
                             <div class="w-14 md:w-16 h-14 md:h-16 bg-white/20 backdrop-blur-xl rounded-2xl flex items-center justify-center text-white mb-6 md:mb-8 border border-white/30 group-hover:bg-cyan-500 group-hover:scale-110 transition-all duration-500">
@@ -285,7 +287,7 @@
                 <circle cx="50" cy="50" r="30" stroke="white" stroke-width="0.1" fill="none" />
             </svg>
         </div>
-        
+
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 <div class="gsap-reveal">
@@ -299,8 +301,8 @@
                                 <iconify-icon icon="solar:globus-bold-duotone" class="text-brand-300 group-hover:text-white text-3xl md:text-4xl"></iconify-icon>
                             </div>
                             <div>
-                                <h4 class="text-xl md:text-2xl font-bold mb-3 text-white">全球產學鏈結</h4>
-                                <p class="text-slate-400 text-base md:text-lg leading-relaxed">與矽谷及科學園區深度合作，提供卓越的海外交流機會，視野無縫接軌國際舞台。</p>
+                                <h4 class="text-xl md:text-2xl font-bold mb-3 text-white">扎根專業素養</h4>
+                                <p class="text-slate-400 text-base md:text-lg leading-relaxed">以紮實的學術訓練與專業課程為基礎，培養學生獨立思考、分析判斷與解決問題的能力。在知識與實務並重的學習環境中，厚植專業實力，建立面對未來挑戰所需的堅實根基。</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-6 group">
@@ -308,16 +310,16 @@
                                 <iconify-icon icon="solar:clapperboard-edit-bold-duotone" class="text-cyan-300 group-hover:text-white text-3xl md:text-4xl"></iconify-icon>
                             </div>
                             <div>
-                                <h4 class="text-xl md:text-2xl font-bold mb-3 text-white">多元跨域彈性</h4>
-                                <p class="text-slate-400 text-base md:text-lg leading-relaxed">打破學門壁壘，鼓勵學子自由探索科技與人文的交點，創造屬於自己的學位地圖。</p>
+                                <h4 class="text-xl md:text-2xl font-bold mb-3 text-white">培養領導風範</h4>
+                                <p class="text-slate-400 text-base md:text-lg leading-relaxed">透過團隊合作、責任承擔與實務歷練，培養領導統御與溝通協調能力。在一次次挑戰與磨練中，學習以身作則、服務團隊，形塑兼具視野、品格與擔當的領導風範。</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="grid grid-cols-2 gap-4 md:gap-6 leadership-images relative">
-                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800" class="rounded-[2.5rem] md:rounded-[3rem] h-64 md:h-80 w-full object-cover mt-10 md:mt-16 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" alt="Students">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800" class="rounded-[2.5rem] md:rounded-[3rem] h-64 md:h-80 w-full object-cover shadow-2xl hover:scale-105 transition-all duration-700" alt="Workshop">
+                    <img src="image/5.png" class="rounded-[2.5rem] md:rounded-[3rem] h-64 md:h-80 w-full object-cover mt-10 md:mt-16 shadow-2xl hover:scale-[1.05] transition-all duration-700" alt="Students">
+                    <img src="image/6.png" class="rounded-[2.5rem] md:rounded-[3rem] h-64 md:h-80 w-full object-cover shadow-2xl hover:scale-105 transition-all duration-700" alt="Workshop">
                 </div>
             </div>
         </div>
@@ -348,34 +350,34 @@
             <div class="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-6 md:gap-8 h-auto md:h-[800px]">
                 <!-- 大圖 (佔據 8 欄) -->
                 <div class="md:col-span-8 md:row-span-2 relative group overflow-hidden rounded-[2.5rem] md:rounded-[3rem] shadow-2xl min-h-[400px] md:min-h-0 gsap-reveal">
-                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover img-pan" alt="Library">
+                    <img src="image/7.png" class="w-full h-full object-cover img-pan" alt="Library">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
                     <div class="absolute top-8 left-8 md:top-10 md:left-10">
                         <span class="px-5 py-2 bg-white/20 backdrop-blur-lg rounded-full text-white text-xs font-black border border-white/30 tracking-widest uppercase">#人文之美</span>
                     </div>
                     <div class="absolute bottom-10 md:bottom-12 left-10 md:left-12 right-12 text-white">
-                        <h3 class="text-3xl md:text-4xl font-black mb-4">浩然圖書館</h3>
+                        <h3 class="text-3xl md:text-4xl font-black mb-4">畢業校友</h3>
                         <p class="text-slate-300 max-w-md text-base md:text-lg leading-relaxed">
-                            藏書百萬，是無數學子靈感的發源地，也是沉思與進步的靜謐港灣。
+                            陽光落在肩章上，也落在未來的路上
                         </p>
                     </div>
                 </div>
 
                 <!-- 中圖 1 (佔據 4 欄) -->
                 <div class="md:col-span-4 md:row-span-1 relative group overflow-hidden rounded-[2.5rem] md:rounded-[3rem] shadow-2xl min-h-[300px] md:min-h-0 gsap-reveal">
-                    <img src="https://images.unsplash.com/photo-1523580494863-6f30312248f5?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover img-pan" alt="Students">
+                    <img src="image/8.png" class="w-full h-full object-cover img-pan" alt="Students">
                     <div class="absolute inset-0 bg-brand-600/20 mix-blend-overlay"></div>
                     <div class="absolute bottom-8 md:bottom-10 left-8 md:left-10 text-white">
-                        <h4 class="text-xl md:text-2xl font-black">熱血社團與校園生活</h4>
+                        <h4 class="text-xl md:text-2xl font-black">風嶺軍樂隊</h4>
                     </div>
                 </div>
 
                 <!-- 中圖 2 (佔據 4 欄) -->
                 <div class="md:col-span-4 md:row-span-1 relative group overflow-hidden rounded-[2.5rem] md:rounded-[3rem] shadow-xl min-h-[300px] md:min-h-0 gsap-reveal">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover img-pan" alt="Laboratory">
+                    <img src="image/9.png" class="w-full h-full object-cover img-pan" alt="Laboratory">
                     <div class="absolute inset-0 bg-brand-600/20 mix-blend-overlay"></div>
                     <div class="absolute bottom-8 md:bottom-10 left-8 md:left-10 text-white">
-                        <h4 class="text-xl md:text-2xl font-black">資安中心</h4>
+                        <h4 class="text-xl md:text-2xl font-black">風嶺舞會</h4>
                     </div>
                 </div>
             </div>
@@ -388,9 +390,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-20">
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-4 mb-8">
-                        <div class="w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center text-3xl shadow-2xl">
-                            <iconify-icon icon="solar:minimalistic-magnifer-bold-duotone"></iconify-icon>
-                        </div>
+
                         <span class="text-2xl md:text-3xl font-black tracking-tighter">國防大學理工學院</span>
                     </div>
                     <p class="text-slate-400 max-w-sm mb-10 text-lg font-medium leading-relaxed">
@@ -402,25 +402,25 @@
                         <a href="https://www.youtube.com/watch?v=K5IE1PVpA0E&t=2s" class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-brand-400 transition-all"><iconify-icon icon="mdi:youtube" width="24"></iconify-icon></a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h5 class="font-black text-lg mb-8 uppercase tracking-widest">快速連結</h5>
                     <ul class="space-y-4 text-slate-400 font-bold">
                         <li><a href="https://www.ccit.ndu.edu.tw/Unit/100043/24503" class="hover:text-brand-400 transition-colors">招生資訊</a></li>
-                        <li><a href="https://portal.ndu.edu.tw/#/" class="hover:text-brand-400 transition-colors">校務系統</a></li>                        
+                        <li><a href="https://portal.ndu.edu.tw/#/" class="hover:text-brand-400 transition-colors">校務系統</a></li>
                         <li><a href="https://www.ccit.ndu.edu.tw/unit/10000/24284" class="hover:text-brand-400 transition-colors">交通導覽</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h5 class="font-black text-lg mb-8 uppercase tracking-widest">聯絡資訊</h5>
                     <ul class="space-y-6 text-slate-400 font-bold">
                         <li class="flex items-center gap-4"><iconify-icon icon="solar:map-point-bold" class="text-brand-500 text-xl"></iconify-icon>桃園市大溪區石園路75號</li>
-                        <li class="flex items-center gap-4"><iconify-icon icon="solar:phone-bold" class="text-brand-500 text-xl"></iconify-icon>(03)380-0627</li>                        
+                        <li class="flex items-center gap-4"><iconify-icon icon="solar:phone-bold" class="text-brand-500 text-xl"></iconify-icon>(03)380-0627</li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="pt-10 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center text-slate-500 text-xs gap-4 font-bold tracking-widest uppercase">
                 <p>&copy; 2026 ROC NDU CCIT. All Rights Reserved.</p>
                 <div class="flex gap-10">
