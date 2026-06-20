@@ -120,17 +120,15 @@
             <!-- Desktop Links -->
             <div class="hidden lg:flex items-center space-x-10 font-bold text-slate-600">
                 <a href="#hero-section" class="hover:text-brand-600 transition-colors relative group">
-                    首頁 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                    遇見風嶺 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
                 </a>
                 <a href="#features" class="hover:text-brand-600 transition-colors relative group">
-                    核心價值 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                    學習旅程 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
                 </a>
                 <a href="#leadership" class="hover:text-brand-600 transition-colors relative group">
-                    領導培力 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
+                    領導風範 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
                 </a>
-                <a href="#gallery" class="hover:text-brand-600 transition-colors relative group">
-                    校園剪影 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
-                </a>
+                
             </div>
 
             <div class="flex items-center gap-4">
@@ -183,12 +181,12 @@
                     每一次學習都是成長的累積，每一次挑戰都是蛻變的契機。從專業知識到領導能力，從自我要求到團隊合作，逐步勾勒出理想中的自己，迎向更寬廣的未來。
                 </p>
 
-                <div class="flex flex-wrap gap-5 gsap-reveal">
-                    <a href="#gallery" class="group bg-brand-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-brand-500/40 flex items-center gap-3 hover:bg-brand-700 transition-all hover:-translate-y-1">
+                <div class="flex flex-nowrap gap-3 md:gap-5 gsap-reveal overflow-x-auto no-scrollbar">
+                    <a href="#gallery" class="shrink-0 group bg-brand-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-brand-500/40 flex items-center gap-3 hover:bg-brand-700 transition-all hover:-translate-y-1">
                         校園剪影
                         <iconify-icon icon="solar:gallery-bold-duotone" class="text-2xl group-hover:rotate-12 transition-transform"></iconify-icon>
                     </a>
-                    <a href="#features" class="group bg-white text-slate-900 border-2 border-slate-100 px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold text-lg shadow-lg flex items-center gap-3 hover:border-brand-200 transition-all hover:-translate-y-1">
+                    <a href="#features" class="shrink-0 group bg-white text-slate-900 border-2 border-slate-100 px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold text-lg shadow-lg flex items-center gap-3 hover:border-brand-200 transition-all hover:-translate-y-1">
                         探索優勢
                         <iconify-icon icon="solar:magic-stick-3-bold-duotone" class="text-2xl text-brand-600"></iconify-icon>
                     </a>
@@ -200,7 +198,8 @@
     <!-- 核心價值卡片 -->
     <section id="features" class="py-20 md:py-32 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-end justify-between mb-16 md:mb-24 gap-8">
+            <!-- 將 items-end 改為 items-start lg:items-end -->
+            <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between mb-16 md:mb-24 gap-8">
                 <div class="gsap-reveal">
                     <h2 class="text-brand-600 font-black tracking-widest uppercase text-sm mb-4">Core Philosophy</h2>
                     <h3 class="text-4xl md:text-6xl font-black text-slate-900">成就非凡的<br><span class="text-slate-400 italic font-light">學習旅程</span></h3>
@@ -326,11 +325,7 @@
     </section>
 
     <!-- 校園剪影：改為 3 個框的佈局 -->
-    <section id="gallery" class="py-20 md:py-32 relative overflow-hidden bg-white">
-        <div class="absolute top-20 right-[5%] md:right-[10%] bg-white/80 backdrop-blur px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3 z-30 animate-bounce">
-            <span class="w-3 h-3 bg-red-500 rounded-full animate-ping"></span>
-            <span class="text-sm font-black text-slate-800 uppercase tracking-widest">Live Life</span>
-        </div>
+    <section id="gallery" class="py-20 md:py-32 relative overflow-hidden bg-white">        
 
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center justify-between mb-16 md:mb-20 gap-8">
@@ -338,12 +333,7 @@
                     <h2 class="text-5xl md:text-7xl font-black text-slate-900 mb-6 tracking-tighter">校園剪影 <span class="text-brand-600">.</span></h2>
                     <p class="text-slate-500 text-lg md:text-xl font-medium">捕捉光影交錯的瞬間，感受風嶺的生命脈動</p>
                 </div>
-                <div class="hidden lg:flex gap-6 gsap-reveal">
-                    <div class="p-6 bg-slate-50 rounded-[2rem] border border-slate-100 flex flex-col items-center justify-center w-32 h-32 text-center">
-                        <b class="text-3xl text-brand-600">50+</b>
-                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">精選場景</span>
-                    </div>
-                </div>
+                
             </div>
 
             <!-- 3 框佈局 -->
@@ -352,9 +342,7 @@
                 <div class="md:col-span-8 md:row-span-2 relative group overflow-hidden rounded-[2.5rem] md:rounded-[3rem] shadow-2xl min-h-[400px] md:min-h-0 gsap-reveal">
                     <img src="image/7.png" class="w-full h-full object-cover img-pan" alt="Library">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
-                    <div class="absolute top-8 left-8 md:top-10 md:left-10">
-                        <span class="px-5 py-2 bg-white/20 backdrop-blur-lg rounded-full text-white text-xs font-black border border-white/30 tracking-widest uppercase">#人文之美</span>
-                    </div>
+                    
                     <div class="absolute bottom-10 md:bottom-12 left-10 md:left-12 right-12 text-white">
                         <h3 class="text-3xl md:text-4xl font-black mb-4">畢業校友</h3>
                         <p class="text-slate-300 max-w-md text-base md:text-lg leading-relaxed">
@@ -424,8 +412,8 @@
             <div class="pt-10 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center text-slate-500 text-xs gap-4 font-bold tracking-widest uppercase">
                 <p>&copy; 2026 ROC NDU CCIT. All Rights Reserved.</p>
                 <div class="flex gap-10">
-                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors">Terms of Service</a>
                 </div>
             </div>
         </div>
